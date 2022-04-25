@@ -127,7 +127,7 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 console.log(amplitudeBug);
 */
 
-const printForcast = function (oop) {
+const printForcast = function () {
   const arr = [17, 21, 23];
   for (let i = 0; i < arr; i++) for (let y = 0; y < arr.length; y++) return arr;
   console.log(`... ${y}C in ${i} days, ...`);
