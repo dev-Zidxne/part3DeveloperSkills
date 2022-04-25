@@ -150,3 +150,5 @@ const printForecast = function (arr) {
 };
 
 printForecast(data1);
+
+//COMPLETE
