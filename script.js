@@ -127,10 +127,26 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 console.log(amplitudeBug);
 */
 
-const printForcast = function () {
-  const arr = [17, 21, 23];
-  for (let i = 0; i < arr; i++) for (let y = 0; y < arr.length; y++) return arr;
-  console.log(`... ${y}C in ${i} days, ...`);
+// const printForcast = function (arr) {
+//   const arr = [17, 21, 23];
+//   for (let i = 0; i < arr; i++) for (let y = 0; y < arr.length; y++) return arr;
+//   console.log(`... ${y}C in ${i} days, ...`);
+// };
+
+// console.log(printForcast());
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+console.log(`... ${data1[0]}C... 
+${data1[1]}C ... ${data1[2]}C ...`);
+
+const printForecast = function (arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]}C in ${i + 1} days ... `;
+  }
+  console.log("..." + str);
 };
 
-console.log(printForcast());
+printForecast(data1);
